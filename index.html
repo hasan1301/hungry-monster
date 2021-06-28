@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry Monster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="header-style mt-3">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-logo" href="#">
+                        <img src="images/logo.svg" alt="" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div id="navbar-font" class="navbar-nav ms-auto">
+                            <a class="nav-link ms-3 me-3" href="#">Home</a>
+                            <a class="nav-link ms-3 me-3" href="#">About</a>
+                            <a class="nav-link ms-3 me-3" href="#">Recipes</a>
+                            <a class="nav-link ms-3 me-3" href="#">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mt-5 mb-5">
+            <form class="col-md-6 mx-auto">
+                <div class="input-group">
+                    <input id="meal-input" type="text" class="form-control bg-light" placeholder="Search for Meal..."
+                        aria-label="Search" />
+                    <div class="input-group-append">
+                        <button id="meal-submit" class="btn" type="button">Search</button>
+                    </div>
+                </div>
+            </form>
+            <h4 id="no-meal-found" class="text-center mt-5"></h4>
+        </section>
+
+        <section id="meal-details-section" class="row my-5 d-flex justify-content-center p-3"></section>
+
+        <section id="meal-info-section" class="row"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
